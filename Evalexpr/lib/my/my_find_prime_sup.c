@@ -1,0 +1,12 @@
+/*
+** EPITECH PROJECT, 2020
+** my_find_prime_sup
+** File description:
+** my_find_prime_sup
+*/
+
+int my_find_prime_sup(int nb)
+{
+    nb = nb;
+    return (0);
+}
