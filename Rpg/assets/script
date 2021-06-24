@@ -1,0 +1,74 @@
+﻿Histoire du jeu :
+
+Vous venez de vous reveillez dans une autre dimension que la votre.
+Il parait que dans cette dimension, les pokemons existent et les humains ont appris à les capturer et à en faire des combattants.
+Il te faut donc chercher à revenir dans ta dimension pour ne pas rester bloquer dans celle-ci !
+
+*Réveil sur la plage nord*
+[Personnage qui est placé à coter de toi et dont on peut discuter avec]
+NOM : "Bonjour étranger ! Ca n'a pas l'air d'aller, tu devrais aller voir notre maire, il pourra t'aider !"
+
+*Marcher vers la mairie*
+*Arriver à la mairie*
+[Personnage devant la mairie]
+NOM : "Bonjour voyageur du temps ! C'est moi qui t'ai fait te téléporter dans notre dimension car j'aurais besoin de ton aide !
+       En effet, des personnes mal intensionnées veulent sacager le cimetière avec leur pokemon surpuissant !
+       Il faut donc que tu les neutralises à l'aide du pokemon le plus puissant de notre dimension : sardocho !
+       Je ne sais pas ou il se trouve ni s'il à déjà été capturer par quelqu'un mais il te faut le trouver pour combattre ces malfrats !
+       Un petit conseil, tu devrais aller voir notre doyen, il pourra te fournir plus d'information. Bonne chance mon amie !"
+
+*Marche vers une des maison*
+*Arriver dans la maison*
+[Personnage un peu vieux devant la maison]
+NOM : "Tu viens pour sardocho c'est ca ? Hmmmm, je l'ai moi même capturer il y a des années ! Mais je l'ai donner à un amis pêcheur de la cote nord !"
+
+*Marche vers la cabane de pecheur du nord*
+*Arriver devant la cabane*
+[Personnage devant la cabane]
+NOM : "Qu'est tu me veux toi ? Des informations ? Il faudra d'abord me battre !"
+*Combat contre le vieux pecheur*
+*Pas de pokemon donc obliger de lui mettre un pied bouche...*
+NOM : "Arf, tu m'as bien peté la gueule... Qu'est-tu veux savoir ? Ou est la dernière personne à avoir capturer sardocho ? 
+       Hmmm, il me semble que mon collègue le pecheur du l'Est pourra t'aider à trouver ce pokemon ! Bon courage..."
+
+*Marche vers la cabane du pecheur de l'Est*
+[Personnage devant la cabane du pecheur]
+NOM : "Bonjour jeune étranger, tu voudrais une information particulière ? Il faudra me (vaincre/rendre un service) !
+*Soit combat, soit à la recherche d'un objet*
+NOM : "Ahhh merci de (ton serice/m'avoir remis les idées en place), si tu cherches la personne qui possède sardocho, je pense que c'est l'homme qui vit sur l'île exilé !"
+
+*Marche vers l'île*
+*Arriver sur l'ile*
+[Personnage devant la maison de l'exilé]
+NOM : "Tu veux sardocho ? Tiens, mais fait en bonne usage, il faut bcp de dégats :/"
+
+*Marche vers le cimetière*
+*Arriver devant le cimetière*
+[3 Personnages que tu dois vaincre dans le cimetière]
+
+*Marcher vers la mairie*
+*Arriver devant la mairie*
+[Personnage devant la mairie]
+NOM : "Super ! Tu as alors réussi à vaincre toutes ces vermines ! Merci beaucoup ! Pour te récompenser, voici un cadeau qui te servira à rentrer chez toi !
+       On m'a parler d'un portail dimensionelle sur une montagne, tu devrais aller voir ca maintenant que tu cette pierre. Bon retour chez toi !"
+
+*Marche vers la montagne*
+*Arriver au sommmet de la montagne*
+*Se mettre au milieu du portail et apppuyer sur E (intéract)*
+
+END : 
+
+Tu as réussi à t'échapper du cette dimension pas très stable, Fécilitations !
+Merci d'avoir jouer à notre jeu !
+
+COmbat contre les mechants du cimetiere : The rock
+						Alderiate 
+						Jason statham
+
+rapper : 
+alkpote
+freeze coreléone
+kaaris
+BOOBA
+roi hennok
+lorenzo

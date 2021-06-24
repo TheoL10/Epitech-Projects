@@ -1,0 +1,93 @@
+TEST
+1er dialogue avec lorenzo :
+Eh salut mamene ! Ca n'a pas l'air d'aller, tu devrais aller voir notre maire.
+Il pourra t'aider lui... il connais tout le monde ! Je te laisse, je file
+rejoindre le poto rico !
+Tiens une replique de mon bob !
+2eme dialogue avec le maire : 
+Yo mon gars ! C'est a cause moi que tu es ici. J'ai besoin de ton aide !
+Des faux rappeurs veulent profaner le cimetiere et tu dois les empecher !
+Neutralise les et je te donnerais la cle pour revenir chez toi !
+Je te conseille d'aller voir du cote de la plage nord, un bonne amis t'aidera.
+3eme dialogue avec le booba : 
+Wsh ma gueule, tu viens pour sardocho le shlag la ?
+Il me semble l'avoir vu chez mon ancien poto pecheur de l'est...
+Fait gaffe il est assez aggressif ! 92i easyyyy
+
+4eme dialogue avec le kaaris beaucoup enervé:
+Comment ca cette lopette de Booba t'as dit que je savais ou est sardocho ?
+2. 7. 2. 7. PUUUUUUUUUUTEEEEEUUHHH !
+Il me faut de la musique pour me detendre la !
+CASSE TOIIIIIII PUUUUUTEEEEUUUUUHHH !
+5eme dialogue avec le kaaris moins enervé :
+Ah pas mal ton morceau de flute ! 
+Bon, c'est bon, je me calme.... Tu veux savoir quoi ? Ou est sardocho ?
+Va voir le pecheur sur l'ile, il pourra t'aider lui.
+2.7 2.7....
+6eme dialogue avec lafouine : 
+Yo mon gars, c'est fouiny babe tu connais !
+Tu cherches quelque chose ? Sardocho ? Ah ouais je l'avais capturer
+tah l'epoque ! Tiens, prends en soin mais pas trop quand meme...
+FouinyFouiny baaaaaabee....
+7eme dialogue avec le maire :
+....
+....
+....
+....
+8eme dialogue avec alkapote :
+Pu-pu-pu-pute
+
+
+
+Dialogue useless generique :
+Je n'ai rien a te dire toi...
+
+
+
+Quetes ditent par lorenzo :
+quete1:
+Hey mamene ! Tu devrais aller voir le maire !
+Il est un peu bizarre mon gars mais t'inquiete,
+il aime s'en fumer des longs mon gaaars !
+
+quete2:
+Hey mamene ! Tu devrais aller voir le pecheur du nord !
+Il porte souvent une casquette et il a l'air bete mais t'inquite,
+il aime s'en fumer des longs mon gaaars !
+
+quete3:
+Hey mamene ! Tu devrais aller voir le pecheur de l'est !
+Il est souvent enerve et il est tres muscle mais t'inquite,
+il aime s'en fumer des longs mon gaaars !
+
+quete4:
+Hey mamene ! Tu devrais aller voir le pecheur de l'exile !
+Il est plus trop connu et tout le monde l'a oublie mais t'inquite,
+il aime s'en fumer des longs mon gaaars !
+
+quete5:
+Hey mamene ! Tu devrais aller casser la gueule au chauve du cimetiere !
+Fait attention, ils sacagent les tombes avec leurs cranes chauve...
+Bonne chance mon gaars !
+
+quete6:
+Hey mamene ! Tu devrais aller voir le maire !
+Il te dira surement comment revenir dans ta dimmension mais t'inquite,
+il aime s'en fumer des longs mon gaaars !
+
+quete7:
+Hey mamene ! Tu devrais aller voir en haut de la montagne !
+Tu pourras revenir chez toi ! Ca aura ete un plaisir de te rencontrer jeune margoulin !
+Et n'oublie pas... Faire du sale tu devras !
+
+dialogue pour jouer de la musique:
+Vous jouez de la musique ...
+
+Quete secondaire:
+Il te reste 5 objets a trouver mamene !
+Il te reste 4 objets a trouver mamene !
+Il te reste 3 objets a trouver mamene !
+Il te reste 2 objets a trouver mamene !
+Il te reste 1 objets a trouver mamene !
+
+*****************************END******************************
