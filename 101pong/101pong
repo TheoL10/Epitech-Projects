@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2019
+## 101pong.py
+## File description:
+## 101pong.py
+##
+
+import sys, math
+from math import *
+                                                                       
+
+if(len(sys.argv) != 8 and len(sys.argv) != 2):
+    print("The good writing is : ./101pong x0 y0 z0 x1 y1 z1 n")
+    sys.exit(84)
+decimal = lambda x, n: eval('"%.'+str(int(n))+'f"%'+repr(x))
+
+def calcul(x0, y0, z0, x1, y1, z1, n):                                                                            
+    vecteur = [(x1 - x0), (y1 - y0), (z1 - z0)]
+    for i in range(n):
+        x1 = vecteur[0] + x1
+        y1 = vecteur[1] + y1
+        z1 = vecteur[2] + z1
+
+    print("The velocity vector of the ball is:")
+    print("("+ decimal(vecteur[0], 2) +", " + decimal(vecteur[1], 2) +", " + decimal(vecteur[2], 2) +")")
+    print("At time t + "+ decimal(n, 0)+", ball coordinates will be:")
+    print("(" + decimal(x1, 2) +", " + decimal(y1, 2) +", " + decimal(z1, 2) +")")
+
+    deg = 90-(acos(abs(vecteur[2])/sqrt((vecteur[0]**2)+(vecteur[1]**2)+(vecteur[2]**2))))*180/pi
+    if(deg == 0):
+        print("The ball won't reach the paddle.")
+        sys.exit(0)
+
+    print("The incidence angle is:")
+    print(decimal(deg, 2) +" degrees")
+    
+    
+if(sys.argv[1][0] == '-' and sys.argv[1][1] == 'h'):
+    print("USAGE")
+    print("    ./101pong x0 y0 z0 x1 y1 z1 n\n")
+    print("DESCRIPTION")
+    print("    x0  ball abscissa at time t - 1\n    y0  ball ordinate at time t - 1\n    z0  ball altitude at time t - 1")
+    print("    x1  ball abscissa at time t\n    y1  ball ordinate at time t\n    z1  ball altitude at time t")
+    print("    n   time shift (greater than or equal to zero, integer)")
+    sys.exit(84)
+        
+def main():
+    x0 = float(sys.argv[1])
+    y0 = float(sys.argv[2])
+    z0 = float(sys.argv[3])
+    x1 = float(sys.argv[4])
+    y1 = float(sys.argv[5])
+    z1 = float(sys.argv[6])
+    n = int(sys.argv[7])
+
+    
+    calcul(x0, y0, z0, x1, y1, z1, n)
+                                                                                                        
+
+main()
