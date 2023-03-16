@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "441f5700-0c0d-4f60-a56f-3ce0f54c41d3",
+		"name": "area Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15304379"
+	},
+	"item": [
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://134.122.89.65:8081/addUser",
+					"protocol": "http",
+					"host": [
+						"134",
+						"122",
+						"89",
+						"65"
+					],
+					"port": "8081",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8081/test",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://134.122.89.65:8081/getUserByID8",
+					"protocol": "http",
+					"host": [
+						"134",
+						"122",
+						"89",
+						"65"
+					],
+					"port": "8081",
+					"path": [
+						"getUserByID8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by  id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://134.122.89.65:8081/deleteUser11",
+					"protocol": "http",
+					"host": [
+						"134",
+						"122",
+						"89",
+						"65"
+					],
+					"port": "8081",
+					"path": [
+						"deleteUser11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "true",
+						"type": "default"
+					},
+					{
+						"key": "Service",
+						"value": "'1-4,3-1'",
+						"type": "default"
+					},
+					{
+						"key": "UserID",
+						"value": "1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://134.122.89.65:8081/addService",
+					"protocol": "http",
+					"host": [
+						"134",
+						"122",
+						"89",
+						"65"
+					],
+					"port": "8081",
+					"path": [
+						"addService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mobile login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ziziman24\",\n    \"pass\": \"azerty\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/mobile/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"mobile",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mobile delete Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InppemltYW4yNCIsImlkIjoiMTEiLCJpYXQiOjE2Nzc2Nzg5NjUsImV4cCI6MTY3Nzc2NTM2NX0.9kNG5bm-ZJDXZBnpye1HsXV5R9tY4bEOcPOnXntUNRY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/mobile/deleteService",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"mobile",
+						"deleteService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mobile create service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"testService\",\n    \"api\": \"twitter\",\n    \"action\": \"tweet\", \n    \"api2\": \"testos\",\n    \"reaction\": \"foo\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InppemltYW4yNCIsImlkIjoiMTEiLCJpYXQiOjE2Nzc2Nzg5NjUsImV4cCI6MTY3Nzc2NTM2NX0.9kNG5bm-ZJDXZBnpye1HsXV5R9tY4bEOcPOnXntUNRY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/mobile/createService",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"mobile",
+						"createService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mobile get services",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InppemltYW4yNCIsImlkIjoiMTEiLCJpYXQiOjE2Nzc2Nzg5NjUsImV4cCI6MTY3Nzc2NTM2NX0.9kNG5bm-ZJDXZBnpye1HsXV5R9tY4bEOcPOnXntUNRY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/mobile/getServices",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"mobile",
+						"getServices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mobile register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ziziman24\",\n    \"email\": \"thisistest\",\n    \"phone\": \"hello\",\n    \"pass\": \"azerty\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/mobile/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"mobile",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

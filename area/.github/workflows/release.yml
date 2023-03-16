@@ -1,0 +1,23 @@
+name: Vérifier les fichiers du dépôt
+
+on:
+  push:
+    branches: [ web-client ]
+
+jobs:
+  build:
+    runs-on: Ubuntu 2-core
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Vérifier les fichiers
+      run: |
+        git diff --name-only HEAD~1..HEAD > files.txt
+        if [ -s files.txt ]; then
+          echo "Les fichiers suivants ont été ajoutés, modifiés ou supprimés :"
+          cat files.txt
+          exit 1
+        else
+          echo "Tous les fichiers du dépôt sont présents dans le push."
+          exit 0
+        fi

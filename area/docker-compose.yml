@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+
+  # mobile:
+  #   build: ./client-mobile/
+  #   volumes:
+  #     - ./client-mobile:/usr/src/app
+  #   container_name: client_mobile
+  #   restart: always
+  #   depends_on:
+  #     - server
+
+  db:
+    image: postgres:latest
+    restart: always
+    env_file: ./.env
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Toytoy10
+      POSTGRES_DB: dbname
+    volumes:
+      - './db:/var/lib/postgresql/data'
+      - ./db_schema.sql:/docker-entrypoint-initdb.d/db_schema.sql
+
+  web:
+    build: ./client-web/
+    restart: always
+    container_name: client_web
+    ports:
+      - 8081:8081
+    env_file: ./.env
+    depends_on:
+      - db
+
+  # server:
+  #   build: ./server/
+  #   container_name: server
+  #   restart: always
+  #   ports:
+  #     - 8080:8080

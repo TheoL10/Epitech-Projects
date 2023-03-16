@@ -1,0 +1,275 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AREA</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/../style/desktop.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour-standalone.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-CF0hUwQca0cbj+CiV7a1/xsCJb7RyrHJXuFF7WfJmfSyP71igTdd3qAZrARc1aMfthj7bMCujIH+F9X7VZm29w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour-standalone.min.js" ></script>
+    </head>
+    <body class="testclick"></body>
+        <div class="main-container">
+            <div class="profile">
+                <div class="user">
+                    <h4 class="testclick"><%= name %></h4>
+                </div>
+                <div class="bouton-darkmode">
+                    <img class="bouton-img1" src="/../assets/soleil.png">
+                    <label class="switch" id="e1">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <img class="bouton-img2" src="/../assets/lune.png">
+                </div>
+                <a class="link testclick" href="/logout"><h4>Disconnect</h4></a>
+            </div>
+            <div class="subs-container testclick2" id="e2">
+                <h1>Create your own service</h1>
+                <br>
+                <form action="/createService" method="POST">
+                    <p><label>Name of your service</label> : <input id="name" name="name" type="text" required/></p>
+                    <p> Choose your service:
+                        <select id="select1" name="api" onchange="updateDropdown2()">
+                            <option value="Discord">Discord</option>
+                            <option value="Meteo">Meteo</option>
+                        </select>
+                    </p>
+                    <p> Select your action:
+                        <select id="select2" name="action">
+                            <option value="1">On server join or left</option>
+                            <option value="2">On profile update</option>
+                        </select>
+                    </p>
+                    <p> Choose your service:
+                        <select id="select3" name="api2" onchange="updateDropdown3()">
+                            <option value="Discord">Discord</option>
+                            <option value="EMail">Email</option>
+                        </select>
+                    </p>
+                    <p> Select your reaction:
+                        <select id="select4" name="reaction">
+                            <option value="1">Get notified on discord chat</option>
+                        </select>
+                    </p>
+                    <br>
+                    <button class="button">Create</button>
+                </form>
+            </div>
+            <div class="not-subs-container" id="e3">
+                <h1 class="write-service">My services</h1>
+                <div class="service-roll">
+                    <% if(typeof services != 'undefined') { %>
+                        <% services.forEach(service=> { %>
+                            <div class="card testclick">
+                                <li><%= service.name %></li>
+                                <% if(service.action_service === 'Discord') { %>
+                                    <img class="discord" src="/../assets/discord.png" alt="Card Image">
+                                    <div class="overlay">
+                                        <li class="nom">Service : <%= service.action_service %></li>
+                                        <li>
+                                            <% if (service.action == 1) { %>
+                                              Action: On server join or left
+                                            <% } %>
+                                            <% if (service.action == 2) { %>
+                                                Action: On profile update
+                                              <% } %>
+                                        </li>
+                                        <li>
+                                            <% if (service.reaction_service == "EMail") { %>
+                                                Service réaction : Email
+                                            <% } %>
+                                            <% if (service.reaction_service == "Discord") { %>
+                                                Service réaction : Discord
+                                            <% } %>
+                                        </li>
+                                        <li>
+                                            <% if (service.reaction == 1 && service.reaction_service == "Discord") { %>
+                                              Réaction: Get notified on discord chat
+                                            <% } %>
+                                            <% if (service.reaction == 1 && service.reaction_service == "EMail") { %>
+                                                Réaction: Received and email when action triggered
+                                              <% } %>
+                                        </li>
+                                    </div>
+                                <% } %>
+                                <% if(service.action_service === 'Meteo') { %>
+                                    <img class="meteo" src="/../assets/météo.png" alt="Card Image">
+                                    <div class="overlay">
+                                        <li class="nom">Service : <%= service.action_service %></li>
+                                        <li>
+                                            <% if (service.action == 1) { %>
+                                              Action: Chance of rain
+                                            <% } %>
+                                            <% if (service.action == 2) { %>
+                                                Action: Too cold
+                                            <% } %>
+                                            <% if (service.action == 3) { %>
+                                                Action: Too hot
+                                            <% } %>
+                                        </li>
+                                        <li>
+                                            <% if (service.reaction_service == "EMail") { %>
+                                                Service réaction : Email
+                                            <% } %>
+                                            <% if (service.reaction_service == "Discord") { %>
+                                                Service réaction : Discord
+                                            <% } %>
+                                        </li>
+                                        <li>
+                                            <% if (service.reaction == 1 && service.reaction_service == "Discord") { %>
+                                              Réaction: Get notified on discord chat
+                                            <% } %>
+                                            <% if (service.reaction == 1 && service.reaction_service == "EMail") { %>
+                                                Réaction: Received and email when action triggered
+                                              <% } %>
+                                        </li>
+                                    </div>
+                                <% } %>
+                                <form action="/deleteService" method="post">
+                                    <input type="hidden" name="id" value="<%= service.id %>">
+                                    <button class="croix">
+                                        <span class="cross-icon"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        <% }) %>
+                    <% } %>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div id="e4">
+                    <button onclick="window.location.href = '/auth';" class="button-param">Parameters</button>
+                </div>
+                <div id="e5">
+                    <button onclick="window.location.href = 'http://134.122.68.99';" class="button-doc">Documentation</button>
+                </div>
+            </div>
+            <footer>
+                <p class="footer">Copyright ©AREA-Milky</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    let isDarkModeEnabled = localStorage.getItem('isDarkModeEnabled') === 'true';
+
+    if (isDarkModeEnabled) {
+        activateDarkMode();
+        darkModeToggle.checked = true;
+    } else {
+        deactivateDarkMode();
+        darkModeToggle.checked = false;
+    }
+
+    darkModeToggle.addEventListener('click', function() {
+        isDarkModeEnabled = !isDarkModeEnabled;
+        localStorage.setItem('isDarkModeEnabled', isDarkModeEnabled);
+        if (isDarkModeEnabled) {
+            activateDarkMode();
+        } else {
+            deactivateDarkMode();
+        }
+    });
+
+    function activateDarkMode() {
+        const elements = document.querySelectorAll('.testclick');
+        const elements2 = document.querySelectorAll('.testclick2');
+        elements.forEach(element => element.classList.add('dark'));
+        elements2.forEach(element => element.classList.add('dark2'));
+    }
+
+    function deactivateDarkMode() {
+        const elements = document.querySelectorAll('.testclick');
+        const elements2 = document.querySelectorAll('.testclick2');
+        elements.forEach(element => element.classList.remove('dark'));
+        elements2.forEach(element => element.classList.remove('dark2'));
+    }
+</script>
+
+<script>
+var tour1 = new Tour({
+  steps: [
+  {
+    element: "#e1",
+    title: "Darkmode",
+    content: "You can activate/deactivate the darkmode",
+    placement: "right",
+    smartPlacement: true,
+    backdrop: true
+  },
+  {
+    element: "#e2",
+    title: "Create services",
+    content: "You can create your own action/reaction by filling in the form",
+    placement: "left",
+    smartPlacement: true,
+    backdrop: true
+  },
+  {
+    element: "#e3",
+    title: "My services",
+    content: "You can find your already created services and delete them by clicking on the red cross",
+    placement: "left",
+    smartPlacement: true,
+    backdrop: true
+  },
+  {
+    element: "#e4",
+    title: "Parameters",
+    content: "You can connect your different accounts to predefined services",
+    placement: "bottom",
+    backdrop: true
+  },
+  {
+    element: "#e5",
+    title: "Documentation",
+    content: "Click to go the official documentation of the project",
+    placement: "bottom",
+    backdrop: true
+  }
+]});
+
+tour1.init();
+
+tour1.start();
+</script>
+
+<script>
+    function updateDropdown2() {
+        var dropdown1value = document.getElementById("select1").value;
+        var dropdown2 = document.getElementById("select2");
+        dropdown2.innerHTML = "";
+
+        if (dropdown1value === "Discord") {
+            dropdown2.innerHTML = 
+            `<option value="1">On server join or left</option>
+            <option value="2">On profile update</option>`;
+        }
+        if (dropdown1value === "Meteo") {
+            dropdown2.innerHTML = 
+            `<option value="1">Chance of rain</option>
+            <option value="2">Too cold</option>
+            <option value="3">Too hot</option>`;
+        }
+    }
+    function updateDropdown3() {
+        var dropdown3value = document.getElementById("select3").value;
+        var dropdown4 = document.getElementById("select4");
+        dropdown4.innerHTML = "";
+
+        if (dropdown3value === "Discord") {
+            dropdown4.innerHTML = 
+            `<option value="1">Get notified on discord chat</option>`;
+        }
+        if (dropdown3value === "EMail") {
+            dropdown4.innerHTML = 
+            `<option value="1">Received an email when action triggered</option>`;
+        }
+    }
+</script>

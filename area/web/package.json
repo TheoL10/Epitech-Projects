@@ -1,0 +1,38 @@
+{
+  "name": "client_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechPromo2025/B-DEV-500-NCY-5-2-area-theo.louismet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechPromo2025/B-DEV-500-NCY-5-2-area-theo.louismet/issues"
+  },
+  "homepage": "https://github.com/EpitechPromo2025/B-DEV-500-NCY-5-2-area-theo.louismet#readme",
+  "description": "",
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@emailjs/nodejs": "^2.1.1",
+    "axios": "^1.2.2",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "emailjs": "^4.0.1",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.9.0",
+    "pg-promise": "^11.0.2"
+  }
+}

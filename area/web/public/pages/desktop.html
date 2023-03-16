@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AREA</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/../style/desktop.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="profile">
+                <div class="user">
+                    <img src="/../assets/ecureuil.gif" class="bubble">
+                    <h4>Charles</h4>
+                </div>
+                <a class="link" href="/"><h4>Disconnect</h4></a>
+            </div>
+            <div class="subs-container">
+                <h1>Your services</h1>
+                <div class="service-roll"></div>
+            </div>
+            <div class="not-subs-container">
+                <h1 style="color: white">Other services</h1>
+                <div class="service-roll">
+                    <div class="card" onclick="moveImage(this)">
+                        <h3 class="title">Spotify History</h3>
+                        <img src="/../assets/spotify.webp" alt="Card Image">
+                        <div class="overlay">
+                            <p>Automaticaly save listened song on Spotify in a Google Doc named Spotify History</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="moveImage(this)">
+                        <h3 class="title">Tweet alert !</h3>
+                        <img src="/../assets/twitter.png" alt="Card Image">
+                        <div class="overlay">
+                            <p>Sends you an email whenever @user tweets something</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="moveImage(this)">
+                        <h3 class="title">Rain notifier</h3>
+                        <img src="/../assets/google_sheet.png" alt="Card Image">
+                        <div class="overlay">
+                            <p>Get notified on your email adress when there is a risk of rain on the choosed location</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="moveImage(this)">
+                        <h3 class="title">Calendar manager</h3>
+                        <img src="/../assets/google-calendar.png" alt="Card Image">
+                        <div class="overlay">
+                            <p>Adds your teams meetings to your google calendar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer style="background-color: #484848;">
+                <p style="color: white; text-align: center; padding: 10px;">Copyright ©AREA-Milky</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+<script>
+    function moveImage() {
+         let alo1 = document.getElementsByClassName('service-roll')[0]
+         let alo2 = document.getElementsByClassName('service-roll')[1]
+         if (alo1.contains(arguments[0]))
+             alo2.appendChild(arguments[0])
+         else if (alo2.contains(arguments[0]))
+             alo1.appendChild(arguments[0])
+     }
+ </script>
