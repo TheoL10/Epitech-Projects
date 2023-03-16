@@ -1,0 +1,15 @@
+[requires]
+boost/1.80.0
+sfml/2.5.1@bincrafters/stable
+
+[options]
+boost:shared=True
+sfml:graphics=True
+sfml:window=True
+sfml:audio=True
+sfml:network=True
+
+[generators]
+cmake
+
+[imports]

@@ -1,0 +1,17 @@
+assets/sprites/background_menu800.png
+assets/sprites/background.png
+assets/sprites/encoche_menu.png
+assets/sprites/enemy_shoot_34_36.png
+assets/sprites/enemy1_34_36.png
+assets/sprites/enemy2_17_18.png
+assets/sprites/enemy3_67_79.png
+assets/sprites/explosion_34_34.png
+assets/sprites/galaxy_800.png
+assets/sprites/laserBeam.png
+assets/sprites/loose.png
+assets/sprites/ship_33_17.png
+assets/sprites/shoot_9_9.png
+assets/sprites/win.png
+assets/sounds/AlienDeath.ogg
+assets/sounds/Explosion.ogg
+assets/sounds/Shoot.ogg
